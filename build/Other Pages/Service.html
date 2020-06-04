@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link href="service.css" rel="stylesheet" />
+        <title>Document</title>
+</head>
+<body>
+     <!---Header-->
+     <header id="header">
+        <a href="#" class="logo"><img src="../images/logo2.png" width="100px" height="auto" alt="Logo"></a>
+        <ul>
+            <li><a href="../index.html" class="active" onclick="toggle()">Home</a></li>
+            <li><a href="about.html" onclick="toggle()">About</a></li>
+            <li><a href="#services"onclick="toggle()" >Services</a></li>
+            <li><a href="port.html"onclick="toggle()" >Portfolio</a></li>
+            <li><a href="team.html" onclick="toggle()">Team</a></li>
+            <li><a href="contact.html"onclick="toggle()">Contact</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+    <div class="ser">
+    <section class="services-section">
+        <div class="inner-width">
+          <h1>Our <strong>Services</strong></h1>
+          <hr color="white">
+          <div class="services owl-carousel">
+  
+            <div class="service">
+              <div class="service-icon">
+                <i class="fas fa-paint-brush"></i>
+              </div>
+              <div class="service-name">Design</div>
+              <div class="service-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam nesciunt similique!</div>
+            </div>
+  
+            <div class="service">
+              <div class="service-icon">
+                <i class="fas fa-pencil-alt"></i>
+              </div>
+              <div class="service-name">Edit Texts</div>
+              <div class="service-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam nesciunt similique!</div>
+            </div>
+  
+            <div class="service">
+              <div class="service-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <div class="service-name">Build Websites</div>
+              <div class="service-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam nesciunt similique!</div>
+            </div>
+  
+            <div class="service">
+              <div class="service-icon">
+                <i class="fas fa-database"></i>
+              </div>
+              <div class="service-name">Manage Databases</div>
+              <div class="service-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam nesciunt similique!</div>
+            </div>
+  
+            <div class="service">
+              <div class="service-icon">
+                <i class="fas fa-headset"></i>
+              </div>
+              <div class="service-name">Support</div>
+              <div class="service-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias aperiam nesciunt similique!</div>
+            </div>
+          </div>
+        </div>
+    
+      </section>
+    </div>
+
+    <footer>
+      <div class="footer">
+          <div class="container">
+              <div class="row">
+                  <div><img src="../images/logo2.png" alt="Logo" width="200px">
+                      <br>
+                      <br>
+                      <br>
+                      <div class="social-media">
+                      <a href="#"><i class="fab fa-facebook-f" style="color: rgb(13, 108, 233);"></i></a>
+                      <a href="#"><i class="fab fa-twitter" style="color: rgb(13, 108, 233);" ></i></a>
+                      <a href="#"><i class="fab fa-instagram" style="color: red;" ></i></a>
+                      <a href="#"><i class="fab fa-youtube" style="color: red;"  ></i></a>
+                      <a href="#"><i class="fab fa-linkedin" style="color: rgb(13, 108, 223);"></i></a>
+                      </div>
+                      <p class="right-text">0 2020 Created By AMIR MAAVIA</p></div>
+                  <div class="col-md-6"><div class="right-col">
+                      <h1>OUR NEWS</h1>
+                      <div class="border"></div>
+                      <p>Enter YOUR EMAIL GET NEW UPDATE.</p>
+                      <form action="" class="newsletter-form">
+                      <input class="input-group" type="text" class="txtb" placeholder="Enter your Email">
+                      <input type="submit" class="btn btn-success" value="submit">
+                      </form></div>
+              </div>
+          </div>
+      </div>
+      </div>
+  </footer>
+      <script>
+        $(".services").owlCarousel({
+          margin:20,
+          loop:true,
+          autoplay:true,
+          autoplayTimeout:2000,
+          autoplayHoverPause:true,
+          responsive:{
+            0:{
+              items:1
+            },
+            600:{
+              items:2
+            },
+            1000:{
+              items:3
+            }
+          }
+        });
+        window.addEventListener("scroll", function(){
+           var header = document.querySelector("header");
+           header.classList.toggle("sticky",window.scrollY > 0);
+       })
+       function toggle(){
+           var header = document.querySelector("header");
+           header.classList.toggle("active");
+       }
+      </script>
+</body>
+</html>

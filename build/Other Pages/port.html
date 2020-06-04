@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="port.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo"><img src="../images/logo2.png" width="100px" height="auto" alt="Logo"></a>
+        <ul>
+            <li><a href="../index.html" class="active" onclick="toggle()">Home</a></li>
+            <li><a href="About.html" onclick="toggle()">About</a></li>
+            <li><a href="Service.html"onclick="toggle()" >Services</a></li>
+            <li><a href="#portfolio"onclick="toggle()" >Portfolio</a></li>
+            <li><a href="team.html" onclick="toggle()">Team</a></li>
+            <li><a href="contact.html"onclick="toggle()">Contact</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+    <center class="text-center"><h1>My Compelete <b> Projects </b> </center>
+        <center><p> Inshallah we will complete the first project very soon</p></center>
+    <!--======Pixel Grid======-->
+<div><img src="https://www.seanet.com/~owenmp/hvd-web/play-aids/grid-lg.gif" class="pixel-grid"/></div>
+<div><i id="toggle-grid" class="fa fa-th"></i></div>
+<!------------------------->
+<!--========Cards========-->
+<div class="container-fluid main-cont">
+    <div class="row news-row">
+        <div class="container-fluid col-md-12 col-sm-6 justify-content-center news-block">
+            <div class="card-group">
+              <div class="underlay">
+                <div class="card">
+                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/wLMJQPH.png')"></div>
+                    <div class="card-block" >
+                    <h5 class="card-title" style="font-family: 'Anton', sans-serif">Canon Unveils New Lens<hr></h5>
+                    </div>
+                </div>
+              </div>
+              <div class="underlay">
+               <div class="card">
+                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/tT6Bxay.png')"></div>
+                    <div class="card-block" >
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">Sennheiser HD 598 Tech Specs<hr></h5>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="underlay">
+                  <div class="card">
+                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/n6b2rib.png')"></div>
+                    <div class="card-block" >
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">North Sea Wind Power Hub<hr></h5>
+                     
+                    </div>
+                  </div>
+                </div>
+                <div class="underlay">
+                  <div class="card">
+                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/ssMsuUO.png')"></div>
+                    <div class="card-block" >
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">Apple MacBook Retina displays<hr></h5>
+                    
+                    </div>
+                  </div>
+                </div>
+                <div class="underlay">
+                  <div class="card">
+                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/yAFDnZ1.png')"></div>
+                    <div class="card-block" >
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">Intel Dismisses 7700k Problems<hr></h5>
+                   
+                    </div>
+                  </div>
+                </div>
+                <div class="underlay">
+                  <div class="card">
+                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/5rgwfW6.png')"></div>
+                    <div class="card-block" >
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">T3 Agenda: Beats By Dre<hr></h5>
+                    
+                    </div>
+                  </div>
+                </div>
+                <div class="underlay">
+                  <div class="card">
+                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/WaGs6zS.png')"></div>
+                    <div class="card-block" >
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">Remembering &ldquo;Jobs&rdquo; 5th anniv<hr></h5>
+                      
+                    </div>
+                  </div>
+                </div>
+                <div class="underlay">
+                  <div class="card">
+                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/M8PGoML.png')"></div>
+                    <div class="card-block" >
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">Pair iPod Touch with an AirPlay<hr></h5>
+                   
+                    </div>
+                  </div>
+                </div>
+                <div class="underlay">
+                  <div class="card">
+                    <div class="card-img-top" style="background-image: url('https://i.imgur.com/Hp8NxLI.png')"></div>
+                    <div class="card-block" >
+                      <h5 class="card-title" style="font-family: 'Anton', sans-serif">A Time-Travel Experiment Works<hr></h5>
+                     
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!------------------------>
+<!--=======Scripts======-->
+<script src="jquery-3.1.1.min.js"></script>
+<script name="toggle-grid" type="text/javascript">
+$(document).ready(function(){
+  $(document).on("keypress", function(event) {
+    // If 'alt + g' keys are pressed:
+    if (event.which === 169){
+        $('#toggle-grid').toggle();
+     }
+  });
+
+  $('#toggle-grid').on("click"
+  , function() {
+      $('.pixel-grid').toggle();
+      $('#toggle-grid').toggleClass('orange');
+    });
+});
+var main = function () {
+    $('.push-bar').on('click', function(event){
+      if (!isClicked){
+        event.preventDefault();
+        $('.arrow').trigger('click');
+        isClicked = true;
+      }
+    });
+  
+    $('.arrow').css({
+      'animation': 'bounce 2s infinite'
+    });
+    $('.arrow').on("mouseenter", function(){
+        $('.arrow').css({
+                'animation': '',
+                'transform': 'rotate(180deg)',
+                'background-color': 'black'
+           });
+    });
+     $('.arrow').on("mouseleave", function(){
+        if (!isClicked){
+            $('.arrow').css({
+                    'transform': 'rotate(0deg)',
+                    'background-color': 'black'
+               });
+        }
+    });
+
+    var isClicked = false;
+
+    $('.arrow').on("click", function(){
+        if (!isClicked){
+            isClicked = true;
+            $('.arrow').css({
+                'transform': 'rotate(180deg)',
+                'background-color': 'black',
+           });
+
+            $('.bar-cont').animate({
+                top: "-15px"
+            }, 300);
+            $('.main-cont').animate({
+                top: "0px"
+            }, 300);
+            // $('.news-block').css({'border': '0'});
+            // $('.underlay').slideDown(1000);
+
+        }
+        else if (isClicked){
+            isClicked = false;
+            $('.arrow').css({
+                'transform': 'rotate(0deg)',       'background-color': 'black'
+           });
+
+            $('.bar-cont').animate({
+                top: "-215px"
+            }, 300);
+            $('.main-cont').animate({
+                top: "-215px"
+            }, 300);
+        }
+    console.log('isClicked= '+isClicked);
+    });
+  
+    $('.card').on('mouseenter', function() {
+      $(this).find('.card-text').slideDown(300);
+    });
+  
+    $('.card').on('mouseleave', function(event) {
+       $(this).find('.card-text').css({
+         'display': 'none'
+       });
+     });
+};
+
+$(document).ready(main);
+
+</script>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div><img src="../images/logo2.png" alt="Logo" width="200px">
+                        <br>
+                        <br>
+                        <br>
+                        <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f" style="color: rgb(13, 108, 233);"></i></a>
+                        <a href="#"><i class="fab fa-twitter" style="color: rgb(13, 108, 233);" ></i></a>
+                        <a href="#"><i class="fab fa-instagram" style="color: red;" ></i></a>
+                        <a href="#"><i class="fab fa-youtube" style="color: red;"  ></i></a>
+                        <a href="#"><i class="fab fa-linkedin" style="color: rgb(13, 108, 223);"></i></a>
+                        </div>
+                        <p class="right-text">0 2020 Created By AMIR MAAVIA</p></div>
+                    <div class="col-md-6"><div class="right-col">
+                        <h1>OUR NEWS</h1>
+                        <div class="border"></div>
+                        <p>Enter YOUR EMAIL GET NEW UPDATE.</p>
+                        <form action="" class="newsletter-form">
+                        <input class="input-group" type="text" class="txtb" placeholder="Enter your Email">
+                        <input type="submit" class="btn btn-success" value="submit">
+                        </form></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky",window.scrollY > 0);
+        })
+        window.addEventListener('click', function(){
+            var a = document.querySelectorAll('a')
+            a.classList.a('active')
+        })
+        function toggle(){
+            var header = document.querySelector("header");
+            header.classList.toggle("active");
+        }
+    </script>

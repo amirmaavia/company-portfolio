@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="team.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo"><img src="../images/logo2.png" width="100px" height="auto" alt="Logo"></a>
+        <ul>
+            <li><a href="../index.html" class="active" onclick="toggle()">Home</a></li>
+            <li><a href="About.html" onclick="toggle()">About</a></li>
+            <li><a href="Service.html"onclick="toggle()" >Services</a></li>
+            <li><a href="port.html"onclick="toggle()" >Portfolio</a></li>
+            <li><a href="#team" onclick="toggle()">Team</a></li>
+            <li><a href="contact.html"onclick="toggle()">Contact</a></li>
+        </ul>
+        <div class="toggle" onclick="toggle()"></div>
+    </header>
+    <div class="container container1">
+        <div class="int">
+  <center>  <h1 class="text-center" >My <b>Team</b> </h1></center>
+  <hr color="white">
+    
+ <center>  <p class="text-center">Our team is here for you. My team wants to trust you.</p></center> 
+</div>
+    <hr>
+        <div class="row ">
+            <div class="col-lg-4">
+        <div class="box">
+            <div class="imgBx">
+                <img src="../images/teamate.jpg">
+            </div>
+            <div class="content">
+                <h2>Hassan <br> <b>Mujtaba</b> </h2>
+                <p> CEO FOUNDER</p>
+                <a href="#"><i class="fab fa-facebook-f" style="color: white;"></i></a>
+                        <a href="#"><i class="fab fa-twitter" style="color: white" ></i></a>
+                        <a href="#"><i class="fab fa-instagram" style="color: white;" ></i></a>
+                        <br>
+                        <br>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="box">
+            <div class="imgBx">
+                <img src="../images/potrait1.jpg">
+            </div>
+            <div class="content">
+                <h2>Amir <br> <b>Maavia</b> </h2>
+                <p> CEO FOUNDER</p>
+                <a href="#"><i class="fab fa-facebook-f" style="color: white;"></i></a>
+                        <a href="#"><i class="fab fa-twitter" style="color: white;" ></i></a>
+                        <a href="#"><i class="fab fa-instagram" style="color: white" ></i></a>
+                     <br>
+                     <br>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+<div class="col-lg-4">
+        <div class="box">
+            <div class="imgBx">
+                <img src="../images/teamate1.png">
+            </div>
+            <div class="content">
+                <h2>Saqib <br> <b>Sheikh</b> </h2>
+                <p> CEO FOUNDER</p>
+                <a href="#"><i class="fab fa-facebook-f" style="color: white;"></i></a>
+                        <a href="#"><i class="fab fa-twitter" style="color: white;" ></i></a>
+                        <a href="#"><i class="fab fa-instagram" style="color: white;" ></i></a>
+                        <br>
+                        <br>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div><img src="../images/logo2.png" alt="Logo" width="200px">
+                        <br>
+                        <br>
+                        <br>
+                        <div class="social-media">
+                        <a href="#"><i class="fab fa-facebook-f" style="color: rgb(13, 108, 233);"></i></a>
+                        <a href="#"><i class="fab fa-twitter" style="color: rgb(13, 108, 233);" ></i></a>
+                        <a href="#"><i class="fab fa-instagram" style="color: red;" ></i></a>
+                        <a href="#"><i class="fab fa-youtube" style="color: red;"  ></i></a>
+                        <a href="#"><i class="fab fa-linkedin" style="color: rgb(13, 108, 223);"></i></a>
+                        </div>
+                        <p class="right-text">0 2020 Created By AMIR MAAVIA</p></div>
+                    <div class="col-md-6"><div class="right-col">
+                        <h1>OUR NEWS</h1>
+                        <div class="border"></div>
+                        <p>Enter YOUR EMAIL GET NEW UPDATE.</p>
+                        <form action="" class="newsletter-form">
+                        <input class="input-group" type="text" class="txtb" placeholder="Enter your Email">
+                        <input type="submit" class="btn btn-success" value="submit">
+                        </form></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </footer>
+    <script>
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky",window.scrollY > 0);
+        })
+        function toggle(){
+            var header = document.querySelector("header");
+            header.classList.toggle("active");
+        }
+    </script>
+    </body>
+    </html>

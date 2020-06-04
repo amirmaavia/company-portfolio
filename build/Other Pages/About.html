@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="about.css" rel="stylesheet"/>
+    <title>About US</title>
+</head>
+<body>
+         <!---Header-->
+    <header id="header">
+       <a href="#" class="logo"><img src="../images/logo2.png" width="100px" height="auto" alt="Logo"></a>
+       <ul>
+           <li><a href="../index.html" class="active" onclick="toggle()">Home</a></li>
+           <li><a href="#about" onclick="toggle()">About</a></li>
+           <li><a href="Service.html"onclick="toggle()" >Services</a></li>
+           <li><a href="port.html"onclick="toggle()" >Portfolio</a></li>
+           <li><a href="team.html" onclick="toggle()">Team</a></li>
+           <li><a href="contact.html"onclick="toggle()">Contact</a></li>
+       </ul>
+       <div class="toggle" onclick="toggle()"></div>
+   </header>
+   <!----ABOUT US -->
+   <div class="about">
+       <div class="container">
+       <div class="us">
+           <h1 class="text-center">About <b>Us</b></h1>
+           <hr color="white">
+   <div class="row ab">
+       <div class="col-md-6 " ><h2 class="text-center"></h2>
+        <br><br><br>
+      <center> <img src="../images/logo2.png" alt="profile" width="250px"></center>
+       </div>
+       
+       <div class="col-md-6"><h2 class="text-center">About</h2>
+       
+       <h3 > NPV </h3>
+       <br>
+       <p>Hello We Have  Frontend Developers and Graphic Designer <hr> We can create these websites for you so that you can do your business or your website at reasonable rates so that we can give you the opportunity. </p>
+   </div>
+       </div>
+       <br><br>
+       <center><button class="btn btn-success">CONTACT ME</button></center>
+       </div>
+   </div>
+   <footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div><img src="../images/logo2.png" alt="Logo" width="200px">
+                    <br>
+                    <br>
+                    <br>
+                    <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-f" style="color: rgb(13, 108, 233);"></i></a>
+                    <a href="#"><i class="fab fa-twitter" style="color: rgb(13, 108, 233);" ></i></a>
+                    <a href="#"><i class="fab fa-instagram" style="color: red;" ></i></a>
+                    <a href="#"><i class="fab fa-youtube" style="color: red;"  ></i></a>
+                    <a href="#"><i class="fab fa-linkedin" style="color: rgb(13, 108, 223);"></i></a>
+                    </div>
+                    <p class="right-text">0 2020 Created By AMIR MAAVIA</p></div>
+                <div class="col-md-6"><div class="right-col">
+                    <h1>OUR NEWS</h1>
+                    <div class="border"></div>
+                    <p>Enter YOUR EMAIL GET NEW UPDATE.</p>
+                    <form action="" class="newsletter-form">
+                    <input class="input-group" type="text" class="txtb" placeholder="Enter your Email">
+                    <input type="submit" class="btn btn-success" value="submit">
+                    </form></div>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+   
+   <script type="text/javascript">
+       window.addEventListener("scroll", function(){
+           var header = document.querySelector("header");
+           header.classList.toggle("sticky",window.scrollY > 0);
+       })
+       function toggle(){
+           var header = document.querySelector("header");
+           header.classList.toggle("active");
+       }
+       </script>
+    </body>
+    </html>
+    
+   
